@@ -17,3 +17,105 @@ Instrukce:
 */
 
 
+
+
+
+/*
+----------------------------------------------------
+DALŠÍ ÚKOLY
+----------------------------------------------------
+
+5) Vytvořte funkci getTriangleAngleType($a, $b, $c),
+   která určí typ trojúhelníku podle úhlů:
+
+   - pravoúhlý
+   - ostroúhlý
+   - tupoúhlý
+
+   Postup:
+   Najděte nejdelší stranu (označte ji c).
+
+   Porovnejte:
+
+   c² ? a² + b²
+
+	   c² = a² + b² → pravoúhlý
+   c² < a² + b² → ostroúhlý
+   c² > a² + b² → tupoúhlý
+
+   Funkce vrátí text s typem trojúhelníku.
+
+----------------------------------------------------
+
+6) Vytvořte funkci getHeightToA($a, $content),
+   která vypočítá výšku na stranu a.
+
+Použijte vzorec:
+
+   v_a = (2 * S) / a
+
+   Funkce vrátí výšku.
+
+----------------------------------------------------
+
+7) Vytvořte funkci getAngles($a, $b, $c),
+   která vypočítá velikosti úhlů α, β, γ.
+
+Použijte kosinovou větu například pro α:
+
+   cos α = (b² + c² − a²) / (2bc)
+
+   Použijte funkce:
+   acos()
+   rad2deg()
+
+   Výsledky zaokrouhlete na 2 desetinná místa.
+
+Funkce vrátí pole:
+
+   [
+	   'alpha' => ...,
+       'beta' => ...,
+       'gamma' => ...
+   ]
+
+   ----------------------------------------------------
+
+8) Vytvořte funkci getMinMaxSide($a, $b, $c),
+   která vrátí nejdelší a nejkratší stranu.
+
+Funkce vrátí pole:
+
+   [
+	   'min' => ...,
+       'max' => ...
+   ]
+
+====================================================
+FUNKCE – DOPLŇTE ŘEŠENÍ
+====================================================
+*/
+
+function getTriangleAngleType(float $a, float $b, float $c): string
+{
+	// TODO: doplňte řešení
+}
+
+
+function getHeightToA(float $a, float $content): float
+{
+	// TODO: doplňte řešení
+}
+
+
+function getAngles(float $a, float $b, float $c): array
+{
+	// TODO: doplňte řešení
+}
+
+
+function getMinMaxSide(float $a, float $b, float $c): array
+{
+	// TODO: doplňte řešení
+}
+
