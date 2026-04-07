@@ -77,3 +77,4 @@ echo 'Sudá: ' . implode(', ', $suda) . "\n";
 echo "\n--- Tvůj úkol ---\n";
 // TODO: Vytvoř pole svých 5 oblíbených filmů a vypiš je s pořadím
 // TODO: Použij array_filter k vyfiltrování filmů začínajících na určité písmeno
+

@@ -11,11 +11,14 @@ $vek = 17;
 
 // Jednoduchá podmínka
 echo "=== If/Else ===\n";
-if ($vek >= 18) {
+if ($vek >= 18) 
+    {
     echo "Jsi plnoletý\n";
-} else {
+    } 
+else 
+    {
     echo "Nejsi plnoletý\n";
-}
+    }
 
 // Podmínka s více větvemi
 echo "\n=== If/Elseif/Else ===\n";
@@ -73,3 +76,14 @@ echo "Uživatel: {$jmeno}\n";
 echo "\n--- Tvůj úkol ---\n";
 // TODO: Napiš podmínku (použij match), která podle skóre (0-100) vypíše známku
 //       90-100 = 1, 75-89 = 2, 50-74 = 3, 25-49 = 4, 0-24 = 5
+
+$skore = 85;
+
+$znamka = match (true) {
+    $skore >= 90 => 1,
+    $skore >= 75 => 2,
+    $skore >= 50 => 3,
+    $skore >= 25 => 4,
+    default => 5,
+};
+echo "Známka: {$znamka}\n";

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulář</title>
+</head>
+<body>
+
+<form action="vypis.php" method="get">
+
+    První číslo: <input type="number" name="cislo1" required><br>
+    Druhé číslo: <input type="number" name="cislo2" required><br>
+    Třetí číslo: <input type="number" name="cislo3" required><br><br>
+
+    Checkbox:<br>
+    <input type="checkbox" name="vyber[]" value="1"> první<br>
+    <input type="checkbox" name="vyber[]" value="2"> druhé<br>
+    <input type="checkbox" name="vyber[]" value="3"> třetí<br><br>
+
+    Operace:<br>
+    <select name="operace">
+        <option value="+">plus</option>
+        <option value="-">minus</option>
+        <option value="*">krát</option>
+        <option value="/">děleno</option>
+    </select><br><br>
+
+    Porovnání:<br>
+    <input type="radio" name="porovnani" value="1-3" required> porovnej1-3<br>
+    <input type="radio" name="porovnani" value="1-2"> porovnej1-2<br>
+    <input type="radio" name="porovnani" value="2-3"> porovnej2-3<br><br>
+
+    <input type="submit" value="Pokračovat">
+
+</form>
+
+</body>
+</html>

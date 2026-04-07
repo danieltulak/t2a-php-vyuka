@@ -29,3 +29,29 @@ declare(strict_types=1);
  *
  * 13. Vypište z prvního pole všechna sudá a z druhého pole všechna lichá čísla.
  */
+
+$cisla = [5, 3, 8, 1, 4, 7, 6, 2, 9, 0];
+echo "Počet prvků: " . count($cisla) . "\n";
+echo "Prvky od posledního k prvnímu:\n";
+for ($i = count($cisla) - 1; $i >= 0; $i--) {
+    echo $cisla[$i] . "\n";
+}
+$jednaCount = 0;
+foreach ($cisla as $cislo) {
+    if ($cislo === 1) {
+        $jednaCount++;
+    }
+}
+echo "Hodnota 1 se vyskytuje {$jednaCount} krát\n";
+$max = $cisla[0];
+foreach ($cisla as $cislo) {
+    if ($cislo > $max) {
+        $max = $cislo;
+    }
+}
+echo "Maximum: {$max}\n";
+foreach ($cisla as &$cislo) {
+    if ($cislo % 2 === 0) {
+        $cislo += 10;
+    }
+}   

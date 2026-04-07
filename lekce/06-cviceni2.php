@@ -26,7 +26,7 @@ Pole obsahuje známky (1–5).
 Vraťte průměr známek jako float.
 
 Pokud je pole prázdné, vraťte 0.
-*/
+
 function prumerZnamek(array $znamky): float
 {
 	// TODO: Doplňte řešení
@@ -41,7 +41,7 @@ Pole obsahuje řetězce.
 Vraťte nejdelší slovo.
 
 Pokud je pole prázdné, vraťte prázdný řetězec.
-*/
+
 function nejdelsiSlovo(array $slova): string
 {
 	// TODO: Doplňte řešení
@@ -54,7 +54,7 @@ function nejdelsiSlovo(array $slova): string
 --------------------------------------------------
 Spočítejte, kolikrát se v textu nachází daný znak.
 Nepoužívejte substr_count().
-*/
+
 function pocetVyskytu(string $text, string $znak): int
 {
 	// TODO: Doplňte řešení
@@ -71,7 +71,7 @@ Heslo je silné, pokud:
 - obsahuje alespoň jedno velké písmeno
 
 Vraťte true / false.
-*/
+
 function jeSilneHeslo(string $heslo): bool
 {
 	// TODO: Doplňte řešení
@@ -84,7 +84,7 @@ function jeSilneHeslo(string $heslo): bool
 --------------------------------------------------
 Pole obsahuje různá čísla (kladná i záporná).
 Vraťte součet pouze kladných čísel.
-*/
+
 function soucetKladnych(array $cisla): int
 {
 	// TODO: Doplňte řešení
@@ -104,7 +104,7 @@ C → F: (C * 9/5) + 32
 F → C: (F - 32) * 5/9
 
 Pokud je jiná jednotka, vraťte null.
-*/
+
 function prevedTeplotu(float $hodnota, string $jednotka): ?float
 {
 	// TODO: Doplňte řešení
@@ -125,7 +125,7 @@ Vraťte asociativní pole ve tvaru:
 
 Nepoužívejte min() ani max().
 Pokud je pole prázdné, vraťte prázdné pole.
-*/
+
 function statistikaPole(array $cisla): array
 {
 	// TODO: Doplňte řešení
@@ -138,7 +138,7 @@ function statistikaPole(array $cisla): array
 --------------------------------------------------
 Vraťte nové pole bez duplicit.
 Nepoužívejte array_unique().
-*/
+
 function odstranDuplicity(array $pole): array
 {
 	// TODO: Doplňte řešení
@@ -156,7 +156,7 @@ Pokud je celková cena vyšší než 1000,
 poskytněte slevu 10 %.
 
 Vrací výslednou cenu.
-*/
+
 function spocitejKosik(array $ceny): float
 {
 	// TODO: Doplňte řešení
@@ -178,7 +178,7 @@ Např. pro 4:
  * * *
 
 Použijte vnořené cykly.
-*/
+
 function sachovnice(int $n): void
 {
 	// TODO: Doplňte řešení
@@ -195,7 +195,7 @@ zepředu i zezadu).
 
 Nepoužívejte strrev().
 Ignorujte velikost písmen.
-*/
+
 function jePalindrom(string $text): bool
 {
 	// TODO: Doplňte řešení

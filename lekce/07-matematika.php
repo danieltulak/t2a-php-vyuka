@@ -16,8 +16,44 @@ Instrukce:
 · Vynechte dva řádky, provede se výpočet obvodu a obsahu (použijte Heronův vzorec 𝑆=√𝑠(𝑠−𝑎)(𝑠−𝑏)(𝑠−𝑐), kde 𝑠=𝑎+𝑏+𝑐2) podle zadání (odmocnina je sqrt($cislo)) a vypíše se: obvod (obsah) je hodnota
 */
 
+$a = 10;
+$b = 10;
+$c = 10;
 
+echo "Strana a: {$a} cm\n";
+echo "Strana b: {$b} cm\n";
+echo "Strana c: {$c} cm\n";
 
+if ($a + $b <= $c || $a + $c <= $b || $b + $c <= $a)
+{
+    echo "\nTrojúhelník nelze sestrojit";
+    exit();
+}
+else
+{
+    echo "\nTrojúhelník lze sestrojit";
+}
+
+if ($a == $b && $b == $c)
+{
+   echo "\nTrojúhelník je rovnostranný";
+}
+else if ($a == $b || $a == $c || $b == $c)
+{
+   echo "\nTrojúhelník je rovnoramenný";
+}  
+else
+{
+   echo "\nTrojúhelník je obecný";
+}
+
+$obvod = $a + $b + $c;
+echo "\nObvod: {$obvod}";
+
+$s = $obvod/2;
+
+$obsah = sqrt($s * ($s - $a) * ($s - $b) * ($s - $c));
+echo "\nObsah: {$obsah}";
 
 
 /*
@@ -94,7 +130,6 @@ Funkce vrátí pole:
 ====================================================
 FUNKCE – DOPLŇTE ŘEŠENÍ
 ====================================================
-*/
 
 function getTriangleAngleType(float $a, float $b, float $c): string
 {
@@ -118,4 +153,5 @@ function getMinMaxSide(float $a, float $b, float $c): array
 {
 	// TODO: doplňte řešení
 }
+*/
 
